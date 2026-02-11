@@ -43,3 +43,23 @@ Focuses on authentication/authorization, database modeling, validation, and clea
 2. **Install dependencies**
    ````bash
    npm install
+3. Create .env file set your values
+   ```
+   DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/DBNAME
+   JWT_SECRET=some-long-random-string
+
+4. Apply database schema
+   ```
+   Push schema
+   npm run db:push
+
+5. (Optional) Seed database
+      ```
+      npm run db:seed
+
+6. Start the API
+   ```
+   npm run dev
+   
+
+
